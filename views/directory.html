@@ -1,0 +1,24 @@
+<div class="content">
+    <div ng-controller="fkrcontroller">
+        <button ng-click=" order='name'">order by name</button>
+        <button ng-click="order='color'"> order by color</button>
+      
+        <input type="text" ng-model="search" placeholder="enter your favi"/>
+      <ul id="fkr-list">
+        <li ng-repeat="fkr1 in fkrs | orderBy:order | filter:search" ng-show="fkr1.available"> 
+          <img ng-src="{{fkr1.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px; border-radius: 15px;" ng-show="fkr1.thumb"/>
+         <h3> {{fkr1.name}} --{{fkr1.price|currency}}</h3>
+         <div class="remove" ng-click="removefkr1(fkr1)">x</div>
+          <span  class="belt" style="background: {{fkr1.color}}">{{fkr1.color}}</span>
+  
+        </li>
+       </ul>
+       <form ng-submit="addFkr()">
+        <input type="text" placeholder="name"  ng-model="newfkr.name"/>
+        <input type="text"  placeholder="color" ng-model="newfkr.color"/>
+        <input type="text"  placeholder="price" ng-model="newfkr.price"/>
+        <input type="submit" value="Add Item"/>
+       </form>
+       <a  href="" ng-click="removeAll()">Delete All Item click here</a>
+     </div> 
+  </div>  

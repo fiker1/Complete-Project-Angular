@@ -1,0 +1,32 @@
+
+[{
+	"name": "one",
+	"color": "red",
+	"price": 10,
+	"available": true,
+	"thumb": "content/css/img/logo.PNG"
+}, {
+	"name": "two",
+	"color": "yellow",
+	"price": 20,
+	"available": true,
+	"thumb": "content/css/img/logo.PNG"
+}, {
+	"name": "three",
+	"color": "cyan",
+	"price": 40,
+	"available": true,
+	"thumb": "content/css/img/logo.PNG"
+}, {
+	"name": "four",
+	"color": "orange",
+	"price": 50,
+	"available": true,
+	"thumb": "content/css/img/logo.PNG"
+}, {
+	"name": "five",
+	"color": "orange",
+	"price": 50,
+	"available": true,
+	"thumb": "content/css/img/logo.PNG"
+}]
