@@ -1,6 +1,5 @@
 var myfkr = angular.module('myfkr',['ngRoute','ngAnimate']);
 myfkr.config(['$routeProvider',  function($routeProvider){
-   
    $routeProvider
    .when('/home',{
       templateUrl: 'views/home.html',
